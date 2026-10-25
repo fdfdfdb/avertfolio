@@ -62,18 +62,18 @@ body[data-page=projects] .page-head{position:relative}
 .filter-button.active,.filter-button:hover{background:var(--cobalt);border-color:var(--ink);color:#fff}
 .project-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;border:0}
 .project-row{display:flex;flex-direction:column;align-items:stretch;gap:0;border:2px solid var(--ink);padding:0;background:#fff;min-width:0}
-.project-row:first-child,.project-row:last-child{grid-column:1/-1;display:grid;grid-template-columns:1.12fr 1fr}
+.project-row:last-child{grid-column:1/-1;display:grid;grid-template-columns:1.12fr 1fr}
 .project-row[hidden]{display:none}
 .project-preview{height:300px;position:relative;overflow:hidden;display:grid;place-items:center;background:#dceaf6}
 .project-preview img{width:100%;height:100%;object-fit:contain;padding:18px;transition:transform .25s}
 .project-preview:hover img{transform:scale(1.04)}
-.project-row:first-child .project-preview,.project-row:last-child .project-preview{height:100%;min-height:370px}
+.project-row:last-child .project-preview{height:100%;min-height:370px}
 .project-row:nth-child(2n) .project-preview{background:#f9e1e9}
 .project-row:nth-child(3n) .project-preview{background:#d9f1ec}
 .project-row:last-child .project-preview{background:#dddffa}
 .project-preview-index{position:absolute;top:12px;left:12px;background:#fff;padding:7px 9px;font-family:Unbounded,"Arial Black",sans-serif;font-size:10px;font-weight:700;color:var(--ink)}
 .project-row-text{padding:26px 28px 29px;display:flex;flex-direction:column;align-items:flex-start;max-width:none;min-height:290px}
-.project-row:first-child .project-row-text,.project-row:last-child .project-row-text{justify-content:center;padding:38px}
+.project-row:last-child .project-row-text{justify-content:center;padding:38px}
 .project-row h2{font-size:clamp(23px,2.35vw,33px);line-height:1.18;margin:13px 0 13px}
 .project-row p{font-size:14px;line-height:1.55;color:var(--ink)}
 .tag-list{margin:auto 0 17px}
@@ -106,7 +106,7 @@ body[data-page=projects] .page-head{position:relative}
   .hero h1{font-size:clamp(33px,4.3vw,52px)}
   .hero-lead{font-size:14px}
   .hero-visual-stamp{font-size:12px}
-  .project-row:first-child,.project-row:last-child{grid-template-columns:1fr 1fr}
+  .project-row:last-child{grid-template-columns:1fr 1fr}
   .project-row-text{padding:22px}
 }
 @media(max-width:700px){
@@ -127,9 +127,9 @@ body[data-page=projects] .page-head{position:relative}
   .hero-visual-index{top:18px;right:18px}
   .page-head{padding:50px 0 32px}
   .project-list{grid-template-columns:1fr}
-  .project-row:first-child,.project-row:last-child{grid-column:auto;display:flex}
-  .project-row:first-child .project-preview,.project-row:last-child .project-preview{height:280px;min-height:0}
-  .project-row:first-child .project-row-text,.project-row:last-child .project-row-text{padding:22px}
+  .project-row:last-child{grid-column:auto;display:flex}
+  .project-row:last-child .project-preview{height:280px;min-height:0}
+  .project-row:last-child .project-row-text{padding:22px}
   .project-row-text{min-height:0}
   .project-preview{height:260px}
   .tag-list{margin:0 0 15px}
